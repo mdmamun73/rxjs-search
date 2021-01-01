@@ -1,1 +1,138 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin:0;
+    padding: 0;
+    background-color: #eee;
+    
+}
+
+.container{
+    text-align:center;;
+}
+
+input[type="text"]{
+    border-radius: 10px;
+    padding:14px;
+    border:none;
+    display: block;
+    width: 70%;
+    margin: 50px auto 0 auto;
+    max-width: 600px;
+
+}
+
+.results{
+    width:80%;
+    margin:120px auto;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.repo{
+    width:100%;
+    max-width: 400px;
+    background: #fff;
+    padding-top: 20px;
+    margin:10px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 21px 0px rgba(214,214,214,1);
+}
+
+.repo h2{
+    width:90%;
+    margin:0 auto;
+    word-break: break-all;
+}
+
+.repo h2> a{
+   color: rgb(0,153,103);
+}
+
+
+/**
+    loader
+*/
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    top: 27px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: rgb(253, 85, 183);
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 6px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 6px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 26px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 45px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(19px, 0);
+    }
+  }
+
+
+
+
+  /* another Loader */
+
+  .loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    margin:0 auto;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
